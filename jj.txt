@@ -1,0 +1,11 @@
+ <button id="view-map-btn" class="map"><a href="view map">  View Map</a></button>  
+        ===========
+<img src="house 9.jpg"height="250",width="330"> 
+====
+<img src="house3 .jpg"width="330",height="200">         
+    
+===================
+  <video height="250" width="620" autoplay loop muted>
+                                <source src="y2mate.com - Beautiful Interior Details  Luxury Home Tour_1080p.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>

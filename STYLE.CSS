@@ -1,0 +1,272 @@
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color:bisque;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+p {
+  
+    text-align: right;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; 
+}
+
+.site-name {
+    color:#5010a3 ;
+    font-weight: bold; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px; 
+}
+
+.paragraph-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center align the content */
+}
+
+#additionalParagraph {
+
+   text-align: left;
+    margin-top: 20px; /* Add some space between paragraphs */
+}
+
+.brown-button {
+    background-color: brown; /* Change button color to brown */
+    color: #fff;
+    margin-top: 20px; /* Add space between button and paragraph */
+}
+
+.hidden {
+    display:none; /* Hide the additional paragraph initially */
+}
+
+nav ul {
+    color: rgb(36, 18, 100);
+    list-style-type: armenian;
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5010a3;
+}
+
+main {
+    padding: 20px;
+}
+
+.background-section {
+    height: 75vh;
+    background-image: url("backgroundd.jpg");
+    background-size:cover;
+    background-position:right;
+}
+.background-services {
+    height: 75vh;
+    background-image: url("Screenshot\ 2024-04-05\ 220615.png");
+    background-size:cover;
+    background-position:right;
+}
+.brown-button {
+    background-color: #8B4513; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+h3{
+
+    text-align: center;
+}
+.map {
+    background-color: #6295c9; 
+    color: rgb(194, 13, 13); 
+    border:#8B4513;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+
+ h6{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:  40px;
+color: #333;
+text-align: center;
+
+ }
+ p10{
+    text-align: center;
+    color: brown;
+ }
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-weight: bold;
+}
+.services-page {
+    background-image: url(sevice\ back.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.colomn-part {
+color:#333;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 75px); 
+  
+}
+
+.center-content {
+    font-size:xx-large;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #0e0101;
+    text-align: center;
+
+}
+
+
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+h30 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+input[type="text"], input[type="password"], input[type="date"], textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+
+
+
+footer {
+    text-align: center;
+}
+
+.footer-links {
+    text-align: left;
+}
+
+.footer-links a {
+    margin-right: 10px; 
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align:right;
+}
+
+
+.join-form {
+    display: none; 
+    background-color: blue;
+}
+
+.join-form.show {
+    display: block; 
+}

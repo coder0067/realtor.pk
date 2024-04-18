@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="INDEX.HTML">
+
+</section>
+        <section class="join-form">
+            <h2>Join Now</h2>
+            <form id="joinForm">
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <span class="error" id="firstNameError"></span>
+                </div>
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <span class="error" id="lastNameError"></span>
+                </div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <span class="error" id="usernameError"></span>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <span class="error" id="confirmPasswordError"></span>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                    <span class="error" id="dobError"></span>
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"></textarea>
+                    <span class="error" id="addressError"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>

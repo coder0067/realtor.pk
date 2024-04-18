@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO PIC.webp" alt="Logo">
+            <div class="site-name">REALTOR.pk</div>
+        </div>
+        <div class="buttons">
+            <button id="joinNowBtn">Join Now</button>
+            <button id="signInBtn">Sign In</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="join_form.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="joinFormContainer">
+        <h30>Join Now</h30>
+        <form id="registrationForm" action="#">
+            <table>
+                <tr>
+                    <th><label for="fullname">Full Name</label></th>
+                    <td><input type="text" id="fullname" name="fullname"></td>
+                </tr>
+                <tr>
+                    <th><label for="lastname">Last Name</label></th>
+                    <td><input type="text" id="lastname" name="lastname"></td>
+                </tr>
+                <tr>
+                    <th><label for="username">Username</label></th>
+                    <td><input type="text" id="username" name="username"></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password</label></th>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr>
+                <tr>
+                    <th><label for="retypepassword">Retype Password</label></th>
+                    <td><input type="password" id="retypepassword" name="retypepassword"></td>
+                </tr>
+                <tr>
+                    <th><label for="birthdate">Birth Date</label></th>
+                    <td><input type="date" id="birthdate" name="birthdate"></td>
+                </tr>
+                <tr>
+                    <th><label for="address">Address</label></th>
+                    <td><textarea id="address" name="address" rows="4"></textarea></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                validateForm();
+            });
+        });
+
+        function validateForm() {
+            // Clear previous error messages
+            clearErrors();
+
+            // Get form inputs
+            var fullName = document.getElementById('fullname').value.trim();
+            var lastName = document.getElementById('lastname').value.trim();
+            var username = document.getElementById('username').value.trim();
+            var password = document.getElementById('password').value;
+            var retypePassword = document.getElementById('retypepassword').value;
+            var birthDate = document.getElementById('birthdate').value;
+            var address = document.getElementById('address').value.trim();
+
+            // Validate Full Name
+            if (fullName === '') {
+                displayError('fullname', 'Full Name is required');
+            }
+
+            // Validate Password
+            if (password === '') {
+                displayError('password', 'Password is required');
+            }
+
+            // Validate Retype Password
+            if (retypePassword === '') {
+                displayError('retypepassword', 'Retype Password is required');
+            } else if (password !== retypePassword) {
+                displayError('retypepassword', 'Passwords do not match');
+            }
+
+            // Validate Username
+            if (username === '') {
+                displayError('username', 'Username is required');
+            } else if (!/^[a-zA-Z0-9]+$/.test(username)) {
+                displayError('username', 'Username should not contain symbols');
+            } else if (username.length < 8) {
+                displayError('username', 'Username should be at least 8 characters long');
+            }
+        }
+
+        function displayError(fieldId, errorMessage) {
+            var errorElement = document.createElement('p');
+            errorElement.className = 'error';
+            errorElement.textContent = errorMessage;
+            document.getElementById(fieldId).parentNode.appendChild(errorElement);
+        }
+
+        function clearErrors() {
+            var errorMessages = document.querySelectorAll('.error');
+            errorMessages.forEach(function(errorMessage) {
+                errorMessage.parentNode.removeChild(errorMessage);
+            });
+        }
+    </script>
+</body>
+</html>
